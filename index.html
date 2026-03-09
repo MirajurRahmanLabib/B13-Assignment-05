@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- Daisy UI + Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   
+    
+    <!-- fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <!-- icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+
+    <title>Login</title>
+    <link rel="shortcut icon" href="./assets/github-logo.png" type="image/x-icon">
+</head>
+<body class="min-h-screen max-w-md mx-auto grid items-center ">
+    <div class="border border-base-300 shadow-md py-8 ">
+        <div id="logo" class=" grid justify-center text-center ">
+            <img class="mx-auto" src="./assets/github-logo.png" alt="">
+            <h4 class="font-semibold text-2xl mt-6">GitHub Issues Tracker</h4>
+            <p class="text-stone-400">Sign in to manage your issues</p>
+        </div>
+        <div id="login-form" class="">
+            <fieldset class="fieldset bg-base-100 border-none rounded-lg  border p-4 mx-auto">
+            <!-- <legend class="fieldset-legend">Login</legend> -->
+
+            <label class="font-semibold text-sm">Username</label>
+            <input id="number" pattern="[0-9]{11}" required class="input w-full" placeholder="Enter Username" />
+        <br>
+            <label class="font-medium text-sm">Password</label>
+            <input id="pin" type="password" class="input w-full" placeholder="Enter Password" />
+
+            
+            <button id="login-btn" class="btn btn-primary mt-4 ">Sign in</button>
+            <div class="flex justify-center"><a href="" class="link link-hover">Forgot Password ?</a></div>
+            </fieldset>
+        </div>
+        <div class="flex items-center text-center w-11/12 m-auto gap-2">
+            <hr class="flex-1 border-base-300">
+            <span> OR </span>
+            <hr class="flex-1 border-base-300">
+        </div>
+        <div class="text-center">
+            <p class="my-6 text-stone-400">Demo Credentials:</p>
+            <div class="w-11/12 m-auto bg-base-200 py-6">
+                <p>Username: admin</p>
+                <p>Password: admin123</p>
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    <script src="./JS/login.js"></script>
+</body>
+</html>
