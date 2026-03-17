@@ -28,28 +28,14 @@
     <title>Dashboard</title>
     <link rel="shortcut icon" href="./assets/github-logo.png" type="image/x-icon">
 </head>
-<body class="bg-base-200">
+<body class="bg-base-300">
     <header>
-        <div class="navbar bg-base-100 shadow-sm ">
-            <div class="navbar-start">
-                <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-                </div>
-                <ul
-                    tabindex="-1"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                    <li><a><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
-                    <li><a><i class="fa-solid fa-book-open"></i>Learn</a></li>
-                    <li><a><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
-                </ul>
-                </div>
-                <a class="flex items-center gap-2 text-xl pl-10">
-                    <img class="w-9" src="./assets/github-logo.png" alt="">
-                    <span class="font-bold text-2xl">GitHub Issues Tracker</span>
-                </a>
+        <div class="navbar bg-base-100 shadow-sm lg:px-10">
+            <div class="navbar-start flex items-center gap-2 text-xl">
+                <img class="w-9" src="./assets/github-logo.png" alt="">
+                <span class="font-bold text-2xl">GitHub Issues Tracker</span>
             </div>
-            <div class="navbar-end hidden lg:flex pr-10 gap-2">
+            <div class="navbar-end  lg:flex  gap-2">
                 <label class="input">
                     <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <g
@@ -69,7 +55,7 @@
             </div>
         </div>        
     </header>
-    <main class="container mx-auto my-16">
+    <main class="container mx-auto py-16">
         <nav class="navbar bg-base-100 shadow-sm gap-2 mb-5 px-4">
             <button class="btn btn-outline btn-primary">All</button>
             <button class="btn btn-outline btn-primary">Open</button>
@@ -81,7 +67,7 @@
                     <img class="p-2 bg-[#ECE4FF] rounded-full" src="./assets/Aperture.png" alt="">
                 </div>
                 <div>
-                    <h2 class="font-semibold text-xl"><span>50</span> Issues</h2>
+                    <h2 class="font-semibold text-xl"><span id="total-issues"></span> Issues</h2>
                     <p class="text-[#64748B]">Track and manage your project issues</p>
                 </div>
             </div>
@@ -91,30 +77,12 @@
             </div>
         </div>
         <!-- issue-container -->
-        <div class="issue-container p-6 grid grid-cols-4 gap-3 ">
-            <div class="issue-card rounded-[4px] bg-base-100 shadow-sm p-4">
-                <div class="flex justify-between">
-                    <img src="./assets/Open-Status.png" alt="">
-                    <div>HIGH</div>
-                </div>
-                <div><h2>Fix navigation menu on mobile devices</h2>
-                <p>The navigation menu doesn't collapse properly on mobile devices...</p>
-                </div>
-                <div>
-                    <button>BUG</button>
-                    <button>HELP WANTED</button>
-                </div>
-                <hr>
-                <div>
-                    <p>#1 by john_doe</p>
-                    <p>1/15/2024</p>
-                </div>
-
-
-            </div>
-
+        <div id="issue-container" class=" p-6 grid grid-cols-2 lg:grid-cols-4 gap-3 bg-base-200 shadow-sm ">
+            
+            
         </div>
 
     </main>
+    <script src="./JS/dashboard.js"></script>
 </body>
 </html>
