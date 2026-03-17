@@ -57,9 +57,9 @@
     </header>
     <main class="container mx-auto py-16">
         <nav class="navbar bg-base-100 shadow-sm gap-2 mb-5 px-4">
-            <button class="btn btn-outline btn-primary">All</button>
-            <button class="btn btn-outline btn-primary">Open</button>
-            <button class="btn btn-outline btn-primary">Closed</button>
+            <button onclick="loadIssueCards()" id="all" class="btn btn-outline btn-primary">All</button>
+            <button onclick="loadIssueCardsOpen()" id="open" class="btn btn-outline btn-primary">Open</button>
+            <button onclick="loadIssueCardsClosed()" id="closed" class="btn btn-outline btn-primary">Closed</button>
         </nav>
         <div class="navbar bg-base-100 shadow-sm gap-2 justify-between px-4">
             <div class="flex gap-2">
