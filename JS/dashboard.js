@@ -244,6 +244,6 @@ document.getElementById('btn-search').addEventListener('click', () =>{
     );
     console.log(filterIssues)
     displayIssueCards(filterIssues);
-    
+    issueCounter();
     });
-});
+})
