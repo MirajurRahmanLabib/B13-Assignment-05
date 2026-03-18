@@ -225,7 +225,10 @@ const displayIssueDetail = (issue) =>{
 // search
 
 document.getElementById('btn-search').addEventListener('click', () =>{
-   
+    
+    document.getElementById('all').classList.add('btn-outline')
+    document.getElementById('open').classList.add('btn-outline')
+    document.getElementById('closed').classList.add('btn-outline')
 
     const input = document.getElementById('input-search');
     const searchValue = input.value;
